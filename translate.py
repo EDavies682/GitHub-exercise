@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
@@ -98,3 +99,12 @@ print(df.head())
 # -----------------------------
 # END
 # -----------------------------
+
+df.plot(
+    kind="scatter",
+    x="length",
+    y="molecular_weight"
+)
+plt.xlabel("Sequence Length")
+plt.ylabel("Molecular Weight")
+plt.show()
