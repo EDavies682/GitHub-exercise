@@ -9,7 +9,7 @@ from scipy.stats import linregress
 # Read sequences
 # -----------------------------
 
-file_path = "input.fas"
+file_path = "input.fasta"
 sequences = list(SeqIO.parse(file_path, "fasta"))
 
 # -----------------------------
