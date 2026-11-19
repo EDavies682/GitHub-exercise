@@ -78,7 +78,7 @@ for record in aa_sequences:
     if ambiguous_count > 0:
         continue  # skip sequences with ambiguous sites
 
-    aa_freqs = prot.get_amino_acids_percent()
+    aa_freqs = prot.amino_acids_percent()
 
     row = {
         "name": record.name,
